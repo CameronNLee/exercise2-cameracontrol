@@ -24,10 +24,25 @@ namespace Obscura
             var cameraPosition = this.ManagedCamera.transform.position;
 
             cameraPosition.x += AutoScrollSpeed;
+            
             // player lagging behind the moving frame will stop at left-most box edge.
-            if (targetPosition.x <= cameraPosition.x)
+            if (targetPosition.x <= cameraPosition.x + TopLeft.x)
             {
-                targetPosition = new Vector3(cameraPosition.x, targetPosition.y, targetPosition.z);
+                targetPosition.x = cameraPosition.x + TopLeft.x;
+            }
+            if (targetPosition.x >= cameraPosition.x + BottomRight.x)
+            {
+                targetPosition.x = cameraPosition.x + BottomRight.x;
+            }
+
+            if (targetPosition.y >= cameraPosition.y + TopLeft.y)
+            {
+                targetPosition.y = cameraPosition.y + TopLeft.y;
+            }
+
+            if (targetPosition.y <= cameraPosition.y + BottomRight.y)
+            {
+                targetPosition.y = cameraPosition.y + BottomRight.y;
             }
 
             
