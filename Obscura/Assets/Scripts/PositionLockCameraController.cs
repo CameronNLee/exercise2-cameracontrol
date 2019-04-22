@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Obscura
 {
     public class PositionLockCameraController : AbstractCameraController
     {
-        [SerializeField] public Vector3 MiddleLeft;
-        [SerializeField] public Vector3 MiddleRight;
-        [SerializeField] public Vector3 MiddleUp;
-        [SerializeField] public Vector3 MiddleDown;
         private Camera ManagedCamera;
         private LineRenderer CameraLineRenderer;
 
@@ -42,17 +40,25 @@ namespace Obscura
         {
             this.CameraLineRenderer.positionCount = 5;
             this.CameraLineRenderer.useWorldSpace = false;
+
+            var horizontalPointLeft = new Vector3(-2.5f, 0.0f, 85.0f);
+            var horizontalPointRight = new Vector3(2.5f, 0.0f, 85.0f);
+
+            var midPoint = new Vector3(0.0f, 0.0f, 85.0f);
+            
+            var verticalPointUp = new Vector3(0.0f, 2.5f, 85.0f);
+            var verticalPointDown = new Vector3(0.0f, -2.5f, 85.0f);
             
             // building horizontal line of the 5x5 cross
-            this.CameraLineRenderer.SetPosition(0, MiddleLeft);
-            this.CameraLineRenderer.SetPosition(1, MiddleRight);
+            this.CameraLineRenderer.SetPosition(0, horizontalPointLeft);
+            this.CameraLineRenderer.SetPosition(1, horizontalPointRight);
             
             // make line towards the center of the player
-            this.CameraLineRenderer.SetPosition(2, new Vector3(0, 0, 85));
+            this.CameraLineRenderer.SetPosition(2, midPoint);
             
             // building vertical line of the 5x5 cross
-            this.CameraLineRenderer.SetPosition(3, MiddleUp);
-            this.CameraLineRenderer.SetPosition(4, MiddleDown);
+            this.CameraLineRenderer.SetPosition(3, verticalPointUp);
+            this.CameraLineRenderer.SetPosition(4, verticalPointDown);
         }
     }
 }
