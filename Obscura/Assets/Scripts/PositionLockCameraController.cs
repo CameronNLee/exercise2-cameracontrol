@@ -56,7 +56,7 @@ namespace Obscura
             // Make line towards the center of the player.
             this.CameraLineRenderer.SetPosition(2, midPoint);
             
-            // Building vertical line of the 5x5 cross
+            // Building vertical line of the 5x5 cross.
             this.CameraLineRenderer.SetPosition(3, verticalPointUp);
             this.CameraLineRenderer.SetPosition(4, verticalPointDown);
         }
