@@ -4,7 +4,7 @@ namespace Obscura
 {
     public class PositionLockLerpCameraController : AbstractCameraController
     {
-        [SerializeField] public float LerpDuration;
+        [SerializeField] private float LerpDuration;
         
         private Camera ManagedCamera;
         private LineRenderer CameraLineRenderer;

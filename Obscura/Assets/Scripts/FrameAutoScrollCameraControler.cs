@@ -5,9 +5,9 @@ namespace Obscura
     public class FrameAutoScrollCameraControler : AbstractCameraController
     {
 
-        [SerializeField] public Vector2 TopLeft;
-        [SerializeField] public Vector2 BottomRight;
-        [SerializeField] public float AutoScrollSpeed;
+        [SerializeField] private Vector2 TopLeft;
+        [SerializeField] private Vector2 BottomRight;
+        [SerializeField] private float AutoScrollSpeed;
         
         private Camera ManagedCamera;
         private LineRenderer CameraLineRenderer;
