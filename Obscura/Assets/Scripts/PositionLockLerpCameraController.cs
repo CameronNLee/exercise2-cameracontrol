@@ -11,14 +11,16 @@ namespace Obscura
         
         private Camera ManagedCamera;
         private LineRenderer CameraLineRenderer;
+        private PlayerController PlayerObject;
+
         private float StartTime;
         private float ElapsedTime;
 
         private Vector3 StartPosition;
         private Vector3 EndPosition;
-        private bool isMoving;
-        private PlayerController PlayerObject;
         private readonly Vector3 NoMovement = new Vector3(0,0,0);
+
+        private bool isMoving;
 
         
         private void Awake()
@@ -36,7 +38,6 @@ namespace Obscura
 
         private void LateUpdate()
         {
-            
             if (PlayerObject.GetMovementDirection() != NoMovement)
             {
                 var cameraPosition = this.ManagedCamera.transform.position;
@@ -60,7 +61,7 @@ namespace Obscura
                 }
                 else
                 {
-                    ElapsedTime = Time.time - StartTime;
+                    ElapsedTime = (Time.time - StartTime);
                     // Update the camera according to Linear Interpolation scheme.
                     cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
                     cameraPosition.z = this.ManagedCamera.transform.position.z;
@@ -83,6 +84,8 @@ namespace Obscura
                     }
 
                     ElapsedTime = (Time.time - StartTime);
+                    // Keep updating the camera according to Linear interpolation
+                    // until the camera catches up to the player who is no longer moving.
                     var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
                     cameraPosition.z = this.ManagedCamera.transform.position.z;
                     this.ManagedCamera.transform.position = cameraPosition;
@@ -140,7 +143,7 @@ namespace Obscura
                     && this.ManagedCamera.transform.position.y == this.Target.transform.position.y);
         }
 
-        // Function code borrowed from PushBoxCamera.cs script.
+        // Helper function code borrowed from PushBoxCamera.cs script.
         // Used to prevent player from going too far out of camera bounds when moving.
         private Vector3 getPushBoxCameraPosition()
         {
@@ -153,9 +156,9 @@ namespace Obscura
             
             // Restrict the pushbox from becoming too big
             // if too high of a LerpDuration is entered.
-            if (boundingFactor >= 50.0f)
+            if (boundingFactor >= 45.0f)
             {
-                boundingFactor = 50.0f;
+                boundingFactor = 45.0f;
             }
             if (targetPosition.y >= cameraPosition.y + boundingFactor)
             {
@@ -167,14 +170,14 @@ namespace Obscura
                 cameraPosition = new Vector3(cameraPosition.x, targetPosition.y + boundingFactor, cameraPosition.z);
             }
 
-            if (targetPosition.x >= cameraPosition.x + (boundingFactor))
+            if (targetPosition.x >= cameraPosition.x + boundingFactor)
             {
-                cameraPosition = new Vector3(targetPosition.x - (boundingFactor), cameraPosition.y, cameraPosition.z);
+                cameraPosition = new Vector3(targetPosition.x - boundingFactor, cameraPosition.y, cameraPosition.z);
             }
 
-            if (targetPosition.x <= cameraPosition.x - (boundingFactor))
+            if (targetPosition.x <= cameraPosition.x - boundingFactor)
             {
-                cameraPosition = new Vector3(targetPosition.x + (boundingFactor), cameraPosition.y, cameraPosition.z);
+                cameraPosition = new Vector3(targetPosition.x + boundingFactor, cameraPosition.y, cameraPosition.z);
             }
 
             return cameraPosition;
