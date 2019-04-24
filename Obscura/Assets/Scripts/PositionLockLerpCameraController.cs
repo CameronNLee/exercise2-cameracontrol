@@ -1,3 +1,4 @@
+using System;
 using System.Numerics;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
@@ -15,7 +16,11 @@ namespace Obscura
 
         private Vector3 StartPosition;
         private Vector3 EndPosition;
+        private bool isMoving;
+        private PlayerController hi;
+        private readonly Vector3 none = new Vector3(0,0,0);
 
+        
         private void Awake()
         {
             this.ManagedCamera = this.gameObject.GetComponent<Camera>();
@@ -26,30 +31,82 @@ namespace Obscura
             // At initialization, start and end are one and the same.
             StartPosition = this.Target.transform.position;
             EndPosition = StartPosition;
+            hi = this.Target.GetComponent<PlayerController>();
         }
 
         private void LateUpdate()
         {
-            if (ElapsedTime >= LerpDuration)
+            var huh = hi.GetMovementDirection();
+            if (huh != none)
             {
-                ElapsedTime = 0;
+                if (!isMoving)
+                {
+                    isMoving = true;
+                    StartPosition = EndPosition;
+                    ElapsedTime = 0.0f;
+                }
+                if (ElapsedTime >= LerpDuration * 0.85f)
+                {
+                    // Update EndPosition to where the player Target is.
+                    EndPosition = this.Target.transform.position;
+                    
+                    // Keep third parameter within 0 to 1 range.
+                    ElapsedTime = LerpDuration * 0.85f;
+
+                    EndPosition = this.Target.transform.position;
+                    
+                    var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
+
+                    // We want to retain default z value of -100
+                    cameraPosition.z = this.ManagedCamera.transform.position.z;
+                    this.ManagedCamera.transform.position = cameraPosition;
+                }
+                else
+                {
+                    // Update EndPosition to where the player Target is.
+                    EndPosition = this.Target.transform.position;
+
+                    // Linear Interpolation section.
+                    // Update the camera according to Linear Interpolation scheme.
+                    var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
+
+                    // We want to retain default z value of -100
+                    cameraPosition.z = this.ManagedCamera.transform.position.z;
+                    this.ManagedCamera.transform.position = cameraPosition;
+
+                    ElapsedTime = Time.time - StartTime;
+                }
+            }
+            else
+            {
+                if (ElapsedTime >= LerpDuration)
+                {
+                    ElapsedTime = LerpDuration;
+                }
+
+                // Player has stopped
+                if (isMoving)
+                {
+                    isMoving = false;
+                    // ElapsedTime = 0.0f;
+                }
+
+                ElapsedTime += Time.deltaTime;
                 // Reset timer and update StartPosition.
                 StartTime = Time.time;
-                StartPosition = EndPosition;
-
-            }
-            // Linear Interpolation section.
-                // Update the camera according to Linear Interpolation scheme.
+                // StartPosition = EndPosition;
                 var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
-                
+
                 // We want to retain default z value of -100
                 cameraPosition.z = this.ManagedCamera.transform.position.z;
                 this.ManagedCamera.transform.position = cameraPosition;
-                
 
-                // Update EndPosition to where the player Target is.
-                EndPosition = this.Target.transform.position;
-                ElapsedTime = Time.time - StartTime;
+            }
+            
+            /* if (ElapsedTime >= LerpDuration)
+            {
+                
+            } */
             
                         
             if (this.DrawLogic)
