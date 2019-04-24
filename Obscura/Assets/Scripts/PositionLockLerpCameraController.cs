@@ -17,117 +17,83 @@ namespace Obscura
         private Vector3 StartPosition;
         private Vector3 EndPosition;
         private bool isMoving;
-        private PlayerController hi;
-        private readonly Vector3 none = new Vector3(0,0,0);
+        private PlayerController PlayerObject;
+        private readonly Vector3 NoMovement = new Vector3(0,0,0);
 
         
         private void Awake()
         {
             this.ManagedCamera = this.gameObject.GetComponent<Camera>();
             this.CameraLineRenderer = this.gameObject.GetComponent<LineRenderer>();
+            PlayerObject = this.Target.GetComponent<PlayerController>();
             StartTime = Time.time;
             ElapsedTime = 0.0f;
             
             // At initialization, start and end are one and the same.
             StartPosition = this.Target.transform.position;
             EndPosition = StartPosition;
-            hi = this.Target.GetComponent<PlayerController>();
-            this.ManagedCamera.transform.position = new Vector3(this.Target.transform.position.x, this.Target.transform.position.y, -100.0f);
         }
 
         private void LateUpdate()
         {
-            var huh = hi.GetMovementDirection();
             
-/*            if (this.ManagedCamera.transform.position.x == this.Target.transform.position.x
-                && this.ManagedCamera.transform.position.y == this.Target.transform.position.y
-                && !isMoving)
+            if (PlayerObject.GetMovementDirection() != NoMovement)
             {
-                ElapsedTime = 0.0f;
-                StartTime = Time.time;
-            }*/
-            
-            if (huh != none)
-            {
+                // The conditional directly below allows us to only set
+                // StartPosition once per "movement", which is what we want.
                 if (!isMoving)
                 {
                     isMoving = true;
                     StartPosition = this.ManagedCamera.transform.position;
                 }
+                
+                // Update EndPosition to where the player Target is.
+                EndPosition = this.Target.transform.position;
+                
+                // Camera is set to not-quite catch up to the moving player
+                // past a certain threshold (85% of LerpDuration).
                 if (ElapsedTime >= LerpDuration * 0.85f)
                 {
-                    // Update EndPosition to where the player Target is.
-                    EndPosition = this.Target.transform.position;
-                    
                     // Keep third parameter within 0 to 1 range.
-                    ElapsedTime = LerpDuration * 0.85f;
-
-                    EndPosition = this.Target.transform.position;
-                    
-                    var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
-
-                    // We want to retain default z value of -100
-                    cameraPosition.z = this.ManagedCamera.transform.position.z;
-                    this.ManagedCamera.transform.position = cameraPosition;
+                    ElapsedTime = LerpDuration * 0.85f;                    
                 }
                 else
                 {
-                    // Update EndPosition to where the player Target is.
-                    EndPosition = this.Target.transform.position;
-
-                    // Linear Interpolation section.
-                    // Update the camera according to Linear Interpolation scheme.
-                    var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
-
-                    // We want to retain default z value of -100
-                    cameraPosition.z = this.ManagedCamera.transform.position.z;
-                    this.ManagedCamera.transform.position = cameraPosition;
-
                     ElapsedTime = Time.time - StartTime;
                 }
+                
+                // Update the camera according to Linear Interpolation scheme.
+                var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
+                cameraPosition.z = this.ManagedCamera.transform.position.z;
+                this.ManagedCamera.transform.position = cameraPosition;
+
             }
             else
             {
-                if (this.ManagedCamera.transform.position.x != this.Target.transform.position.x
-                    || this.ManagedCamera.transform.position.y != this.Target.transform.position.y)
+                if (!cameraHasCaughtUpToPlayer())
                 {
-                    if (ElapsedTime >= LerpDuration)
-                    {
-                        ElapsedTime = LerpDuration;
-                    }
-
-                    // Player has stopped
+                    // Once again, we use this to set the StartPosition only once
+                    // per "non-movement". Likewise, reset the StartTime here ONCE.
                     if (isMoving)
                     {
                         isMoving = false;
                         StartTime = Time.time;
-                        // ElapsedTime = 0.0f;
                         StartPosition = this.ManagedCamera.transform.position;
                     }
 
                     ElapsedTime = (Time.time - StartTime);
-                    // Reset timer and update StartPosition.
-                    // StartPosition = EndPosition;
                     var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
-
-                    // We want to retain default z value of -100
                     cameraPosition.z = this.ManagedCamera.transform.position.z;
                     this.ManagedCamera.transform.position = cameraPosition;
                 }
                 else
                 {
+                    // Camera position is now equal to player position, so reset these values.
                     ElapsedTime = 0.0f;
                     StartTime = Time.time;
                     StartPosition = EndPosition;
                 }
-
             }
-            
-            /* if (ElapsedTime >= LerpDuration)
-            {
-                
-            } */
-            
                         
             if (this.DrawLogic)
             {
@@ -165,9 +131,12 @@ namespace Obscura
             this.CameraLineRenderer.SetPosition(4, verticalPointDown);
         }
 
-        private Vector3 Lerp(Vector3 start, Vector3 end, float duration)
+        // Helper function that checks if camera position is the player's position.
+        // If so, that means that the camera has caught up to the player.
+        private bool cameraHasCaughtUpToPlayer()
         {
-            return start + duration * (end - start);
+            return (this.ManagedCamera.transform.position.x == this.Target.transform.position.x
+                    && this.ManagedCamera.transform.position.y == this.Target.transform.position.y);
         }
     }
 }
