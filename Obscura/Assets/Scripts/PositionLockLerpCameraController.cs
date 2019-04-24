@@ -26,24 +26,33 @@ namespace Obscura
             this.ManagedCamera = this.gameObject.GetComponent<Camera>();
             this.CameraLineRenderer = this.gameObject.GetComponent<LineRenderer>();
             StartTime = Time.time;
-            ElapsedTime = 0;
+            ElapsedTime = 0.0f;
             
             // At initialization, start and end are one and the same.
             StartPosition = this.Target.transform.position;
             EndPosition = StartPosition;
             hi = this.Target.GetComponent<PlayerController>();
+            this.ManagedCamera.transform.position = new Vector3(this.Target.transform.position.x, this.Target.transform.position.y, -100.0f);
         }
 
         private void LateUpdate()
         {
             var huh = hi.GetMovementDirection();
+            
+/*            if (this.ManagedCamera.transform.position.x == this.Target.transform.position.x
+                && this.ManagedCamera.transform.position.y == this.Target.transform.position.y
+                && !isMoving)
+            {
+                ElapsedTime = 0.0f;
+                StartTime = Time.time;
+            }*/
+            
             if (huh != none)
             {
                 if (!isMoving)
                 {
                     isMoving = true;
-                    StartPosition = EndPosition;
-                    ElapsedTime = 0.0f;
+                    StartPosition = this.ManagedCamera.transform.position;
                 }
                 if (ElapsedTime >= LerpDuration * 0.85f)
                 {
@@ -79,27 +88,38 @@ namespace Obscura
             }
             else
             {
-                if (ElapsedTime >= LerpDuration)
+                if (this.ManagedCamera.transform.position.x != this.Target.transform.position.x
+                    || this.ManagedCamera.transform.position.y != this.Target.transform.position.y)
                 {
-                    ElapsedTime = LerpDuration;
-                }
+                    if (ElapsedTime >= LerpDuration)
+                    {
+                        ElapsedTime = LerpDuration;
+                    }
 
-                // Player has stopped
-                if (isMoving)
+                    // Player has stopped
+                    if (isMoving)
+                    {
+                        isMoving = false;
+                        StartTime = Time.time;
+                        // ElapsedTime = 0.0f;
+                        StartPosition = this.ManagedCamera.transform.position;
+                    }
+
+                    ElapsedTime = (Time.time - StartTime);
+                    // Reset timer and update StartPosition.
+                    // StartPosition = EndPosition;
+                    var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
+
+                    // We want to retain default z value of -100
+                    cameraPosition.z = this.ManagedCamera.transform.position.z;
+                    this.ManagedCamera.transform.position = cameraPosition;
+                }
+                else
                 {
-                    isMoving = false;
-                    // ElapsedTime = 0.0f;
+                    ElapsedTime = 0.0f;
+                    StartTime = Time.time;
+                    StartPosition = EndPosition;
                 }
-
-                ElapsedTime += Time.deltaTime;
-                // Reset timer and update StartPosition.
-                StartTime = Time.time;
-                // StartPosition = EndPosition;
-                var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
-
-                // We want to retain default z value of -100
-                cameraPosition.z = this.ManagedCamera.transform.position.z;
-                this.ManagedCamera.transform.position = cameraPosition;
 
             }
             
