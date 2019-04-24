@@ -39,6 +39,7 @@ namespace Obscura
             
             if (PlayerObject.GetMovementDirection() != NoMovement)
             {
+                var cameraPosition = this.ManagedCamera.transform.position;
                 // The conditional directly below allows us to only set
                 // StartPosition once per "movement", which is what we want.
                 if (!isMoving)
@@ -54,19 +55,19 @@ namespace Obscura
                 // past a certain threshold (85% of LerpDuration).
                 if (ElapsedTime >= LerpDuration * 0.85f)
                 {
-                    // Keep third parameter within 0 to 1 range.
-                    ElapsedTime = LerpDuration * 0.85f;                    
+                    // Update the camera according to PushBoxCamera scheme.
+                    cameraPosition = getPushBoxCameraPosition();
                 }
                 else
                 {
                     ElapsedTime = Time.time - StartTime;
+                    // Update the camera according to Linear Interpolation scheme.
+                    cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
+                    cameraPosition.z = this.ManagedCamera.transform.position.z;
                 }
                 
-                // Update the camera according to Linear Interpolation scheme.
-                var cameraPosition = Vector3.Lerp(StartPosition, EndPosition, (ElapsedTime / LerpDuration));
-                cameraPosition.z = this.ManagedCamera.transform.position.z;
+                // Finally, truly update the camera position.
                 this.ManagedCamera.transform.position = cameraPosition;
-
             }
             else
             {
@@ -137,6 +138,46 @@ namespace Obscura
         {
             return (this.ManagedCamera.transform.position.x == this.Target.transform.position.x
                     && this.ManagedCamera.transform.position.y == this.Target.transform.position.y);
+        }
+
+        // Function code borrowed from PushBoxCamera.cs script.
+        // Used to prevent player from going too far out of camera bounds when moving.
+        private Vector3 getPushBoxCameraPosition()
+        {
+            var targetPosition = this.Target.transform.position;
+            var cameraPosition = this.ManagedCamera.transform.position;
+            
+            // Set how big to draw the pushbox boundaries based on some constant factor
+            // times the LerpDuration. I.e. the bigger the LerpDuration, the bigger the boundaries.
+            var boundingFactor = this.LerpDuration * 20.0f;
+            
+            // Restrict the pushbox from becoming too big
+            // if too high of a LerpDuration is entered.
+            if (boundingFactor >= 50.0f)
+            {
+                boundingFactor = 50.0f;
+            }
+            if (targetPosition.y >= cameraPosition.y + boundingFactor)
+            {
+                cameraPosition = new Vector3(cameraPosition.x, targetPosition.y - boundingFactor, cameraPosition.z);
+            }
+
+            if (targetPosition.y <= cameraPosition.y - boundingFactor)
+            {
+                cameraPosition = new Vector3(cameraPosition.x, targetPosition.y + boundingFactor, cameraPosition.z);
+            }
+
+            if (targetPosition.x >= cameraPosition.x + (boundingFactor))
+            {
+                cameraPosition = new Vector3(targetPosition.x - (boundingFactor), cameraPosition.y, cameraPosition.z);
+            }
+
+            if (targetPosition.x <= cameraPosition.x - (boundingFactor))
+            {
+                cameraPosition = new Vector3(targetPosition.x + (boundingFactor), cameraPosition.y, cameraPosition.z);
+            }
+
+            return cameraPosition;
         }
     }
 }
