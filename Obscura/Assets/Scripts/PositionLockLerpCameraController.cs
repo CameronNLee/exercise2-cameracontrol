@@ -123,14 +123,14 @@ namespace Obscura
             var verticalPointUp = new Vector3(0.0f, 2.5f, 85.0f);
             var verticalPointDown = new Vector3(0.0f, -2.5f, 85.0f);
             
-            // building horizontal line of the 5x5 cross
+            // building horizontal line of the 5x5 cross.
             this.CameraLineRenderer.SetPosition(0, horizontalPointLeft);
             this.CameraLineRenderer.SetPosition(1, horizontalPointRight);
             
-            // make line towards the center of the player
+            // make line towards the center of the player.
             this.CameraLineRenderer.SetPosition(2, midPoint);
             
-            // building vertical line of the 5x5 cross
+            // building vertical line of the 5x5 cross.
             this.CameraLineRenderer.SetPosition(3, verticalPointUp);
             this.CameraLineRenderer.SetPosition(4, verticalPointDown);
         }
