@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ecdd950-51d9-4da5-8e50-fbe9aa47eba5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetFocusLerpCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TargetFocusLerpCameraController.cs" afterDir="false" />
+    </list>
+    <list id="6b58845f-88e2-4481-ba17-11ed3bbd1429" name="Revert: Minor formatting;" comment="Revert: Minor formatting;" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PositionLockLerpCameraController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+              <folding>
+                <marker date="1556183081839" expanded="false" signature="6:92" ph="..." />
+                <marker date="1556183081839" expanded="true" signature="111:7717" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="190:7715" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="675:1176" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="1211:4422" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="1288:2801" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="1395:1527" ph="/* The conditional directly below allows us to only set ... */" />
+                <marker date="1556183081839" expanded="true" signature="1558:1706" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="1888:2014" ph="/* Camera is set to not-quite catch up to the moving player ... */" />
+                <marker date="1556183081839" expanded="true" signature="2071:2248" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="2269:2636" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="2818:4129" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="2882:3831" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="2921:3066" ph="/* Once again, we use this to set the StartPosition only once ... */" />
+                <marker date="1556183081839" expanded="true" signature="3100:3312" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="3393:3544" ph="/* Keep updating the camera according to Linear interpolation ... */" />
+                <marker date="1556183081839" expanded="true" signature="3852:4115" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="4186:4310" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="4327:4412" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="4470:5516" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="5526:5675" ph="/* Helper function that checks if camera position is the player's position. ... */" />
+                <marker date="1556183081839" expanded="true" signature="5724:5941" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="5951:6100" ph="/* Helper function code borrowed from PushBoxCamera.cs script. ... */" />
+                <marker date="1556183081839" expanded="true" signature="6151:7709" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="6324:6499" ph="/* Set how big to draw the pushbox boundaries based on some constant factor ... */" />
+                <marker date="1556183081839" expanded="true" signature="6585:6687" ph="/* Restrict the pushbox from becoming too big ... */" />
+                <marker date="1556183081839" expanded="true" signature="6728:6796" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="6867:7012" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="7084:7229" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="7301:7446" ph="{...}" />
+                <marker date="1556183081839" expanded="true" signature="7518:7663" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TargetFocusLerpCameraController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="51" />
+              <folding>
+                <marker date="1556185515673" expanded="false" signature="6:92" ph="..." />
+                <marker date="1556185515673" expanded="true" signature="111:6182" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="189:6180" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="723:1167" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="1202:4805" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="1279:3209" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="1501:1633" ph="/* The conditional directly below allows us to only set ... */" />
+                <marker date="1556185515673" expanded="true" signature="1664:1812" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="1846:2014" ph="/* Update EndPosition to where the player Target is ... */" />
+                <marker date="1556185515673" expanded="true" signature="2498:2655" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="2676:2771" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="3226:4536" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="3388:4238" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="3440:3652" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="3799:3950" ph="/* Keep updating the camera according to Linear interpolation ... */" />
+                <marker date="1556185515673" expanded="true" signature="4259:4522" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="4569:4693" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="4710:4795" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="4853:5899" ph="{...}" />
+                <marker date="1556185515673" expanded="true" signature="5957:6174" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FourWaySpeedupPushZoneCameraController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+              <folding>
+                <marker date="1556155909409" expanded="false" signature="6:129" ph="..." />
+                <marker date="1556155909409" expanded="true" signature="148:4532" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="233:4530" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="557:807" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="834:2559" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="1075:1563" ph="/* Note: Because playerSpeed always returns 200 or 800 (when boosting), ... */" />
+                <marker date="1556155909409" expanded="true" signature="2320:2444" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="2461:2546" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="2615:3235" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="3245:3486" ph="/* Sets the camera speed to the player speed if player touches ... */" />
+                <marker date="1556155909409" expanded="true" signature="3556:4515" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="3697:3837" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="3907:4050" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="4120:4264" ph="{...}" />
+                <marker date="1556155909409" expanded="true" signature="4330:4469" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FrameAutoScrollCameraControler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <marker date="1555971210815" expanded="true" signature="37:2725" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="114:2723" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="407:584" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="619:2044" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="982:1075" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="1145:1242" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="1309:1402" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="1473:1570" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="1808:1932" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="1949:2034" ph="{...}" />
+                <marker date="1555971210815" expanded="true" signature="2104:2717" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <marker date="1555560711203" expanded="false" signature="6:78" ph="..." />
+                <marker date="1555560711203" expanded="true" signature="167:2244" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="329:444" ph="/* Serialized private fields flag a warning as of v2018.3. ... */" />
+                <marker date="1555560711203" expanded="true" signature="703:1107" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="945:1101" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1143:1190" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1233:1284" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1303:2242" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1346:1469" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1506:1630" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1710:1841" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1854:2021" ph="{...}" />
+                <marker date="1555560711203" expanded="true" signature="1916:2011" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>StartPosition</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PositionLockLerpCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/80/069efecc/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FourWaySpeedupPushZoneCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FourWaySpeedupPushZoneCameraController.cs.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B140E050-1769-43F4-A096-6C7CFA9CC579/b5/f516e61c/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AbstractCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PositionLockCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/a6/61e8f38c/AudioSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PushBoxCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../exercise3-observer-cmnlee/Pikmini/Assets/Scripts/IWatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/645B5729-CB30-4920-886A-95AAF544DA6F/2f/4dfb1e66/EditorApplicationLayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TargetFocusLerpCameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FrameAutoScrollCameraControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PushBoxCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FrameAutoScrollCameraControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PositionLockCameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FourWaySpeedupPushZoneCameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PositionLockLerpCameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TargetFocusLerpCameraController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../exercise3-observer-cmnlee/Pikmini" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="772">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="772" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ecdd950-51d9-4da5-8e50-fbe9aa47eba5" name="Default Changelist" comment="" />
+      <changelist id="6b58845f-88e2-4481-ba17-11ed3bbd1429" name="Revert: Minor formatting;" comment="" />
+      <created>1555927592796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555927592796</updated>
+      <workItem from="1555927594035" duration="3776000" />
+      <workItem from="1555961100863" duration="6036000" />
+      <workItem from="1555971911471" duration="47379000" />
+      <workItem from="1556089059002" duration="50000" />
+      <workItem from="1556090132675" duration="16933000" />
+      <workItem from="1556245831163" duration="1212000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implemented stage1 5x5 camera cross and position lock camera">
+      <created>1555962477299</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555962477299</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Managed to get auto-scroll camera; still needs proper player movement">
+      <created>1555966182152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555966182152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed serialized fields from stage 1, as project specs do not require them">
+      <created>1555968869323</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555968869324</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FrameAutoScrollCameraController.cs now auto scrolls properly with bounding box">
+      <created>1555970141448</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555970141448</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Setting up stage3 script">
+      <created>1555971138617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555971138617</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed SerializedFields access from public to private">
+      <created>1555971290817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555971290817</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Better comment formatting according to style guidelines">
+      <created>1555973242890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555973242890</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Setting up stage3 script">
+      <created>1555973270387</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555973270387</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Smooth camera movement for stage 3; start position update is bugged still">
+      <created>1555984747532</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555984747532</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Correct camera smoothing and player tracking implemented for moving and stopping">
+      <created>1556066780300</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556066780300</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Additional fine-tuning to camera smoothing">
+      <created>1556071803146</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556071803146</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Massive code and logic cleanup.">
+      <created>1556073561736</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1556073561736</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implemented PushBox camera boundaries if player moves too far.">
+      <created>1556075769764</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556075769764</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Minor formatting; finished with stage 3.">
+      <created>1556076049581</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556076049581</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Began stage 4 skeleton code">
+      <created>1556076644280</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556076644280</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implemented stage 4">
+      <created>1556088725271</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556088725271</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Minor formatting;">
+      <created>1556089001961</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1556089001961</updated>
+    </task>
+    <task id="LOCAL-00018" summary="github issue apparently did not submit stage 5 after checking just now!">
+      <created>1556156030767</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1556156030767</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Unity settings resaved">
+      <created>1556156067030</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556156067030</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Once again reset DrawLogic to be enabled for all for immediate testability.">
+      <created>1556156108760</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556156108760</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="75386000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="20" width="1346" height="728" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2690513" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" order="15" visible="true" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented stage1 5x5 camera cross and position lock camera" />
+    <MESSAGE value="Managed to get auto-scroll camera; still needs proper player movement" />
+    <MESSAGE value="Removed serialized fields from stage 1, as project specs do not require them" />
+    <MESSAGE value="FrameAutoScrollCameraController.cs now auto scrolls properly with bounding box" />
+    <MESSAGE value="Changed SerializedFields access from public to private" />
+    <MESSAGE value="Better comment formatting according to style guidelines" />
+    <MESSAGE value="Added missing period for comment" />
+    <MESSAGE value="Smooth camera movement for stage 3; start position update is bugged still" />
+    <MESSAGE value="Correct camera smoothing and player tracking implemented for moving and stopping" />
+    <MESSAGE value="Additional fine-tuning to camera smoothing" />
+    <MESSAGE value="Massive code and logic cleanup." />
+    <MESSAGE value="Implemented PushBox camera boundaries if player moves too far." />
+    <MESSAGE value="Minor formatting; finished with stage 3." />
+    <MESSAGE value="Began stage 4 skeleton code" />
+    <MESSAGE value="Implemented stage 4" />
+    <MESSAGE value="Minor formatting;" />
+    <MESSAGE value="github issue apparently did not submit stage 5 after checking just now!" />
+    <MESSAGE value="Unity settings resaved" />
+    <MESSAGE value="Once again reset DrawLogic to be enabled for all for immediate testability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Once again reset DrawLogic to be enabled for all for immediate testability." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/FrameAutoScrollCameraControler.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/FrameAutoScrollCameraControler.cs" initialLine="23">
+            <startOffsets>
+              <option value="707" />
+            </startOffsets>
+            <endOffsets>
+              <option value="766" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>StartPosition</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.Target.transform.position</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Target.transform.position</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.ManagedCamera.transform.position</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>hi</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>EndPosition</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ElapsedTime</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.ElapsedTime</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05523276-EF37-492A-8918-C36E7BB297B4/a6/61e8f38c/AudioSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/645B5729-CB30-4920-886A-95AAF544DA6F/2f/4dfb1e66/EditorApplicationLayout.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8D2DEAE-EB3A-4471-B3E2-24C2A136823A/80/069efecc/Vector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="155" column="6" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="6" />
+          <folding>
+            <marker date="1555980071267" expanded="true" signature="0:332" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1555980071267" expanded="false" signature="340:471" ph="..." />
+            <marker date="1555980071267" expanded="true" signature="494:23131" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="499:591" ph="///   &lt;para&gt;Representation of 3D vectors and points.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="902:23129" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="1923:2005" ph="///   &lt;para&gt;X component of the vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="2030:2112" ph="///   &lt;para&gt;Y component of the vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="2137:2219" ph="///   &lt;para&gt;Z component of the vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="2245:2451" ph="///   &lt;para&gt;Creates a new vector with given x, y, z components.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="2497:2563" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="2569:2758" ph="///   &lt;para&gt;Creates a new vector with given x, y components and sets z to zero.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="2795:2864" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="2870:3070" ph="///   &lt;para&gt;Spherically interpolates between two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="3199:3304" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="3310:3510" ph="///   &lt;para&gt;Spherically interpolates between two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="3657:3771" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="4054:4122" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="4461:4543" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="4549:5031" ph="///   &lt;para&gt;Rotates a vector current towards target.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="5217:5374" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="5380:5577" ph="///   &lt;para&gt;Linearly interpolates between two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="5639:5774" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="5780:5977" ph="///   &lt;para&gt;Linearly interpolates between two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="6048:6155" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="6161:6648" ph="///   &lt;para&gt;Calculate a position between the points specified by current and target, moving no farther than the d ... " />
+            <marker date="1555980071267" expanded="true" signature="6762:7049" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="7236:7392" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="7557:7760" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="8014:8983" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="8843:8953" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="9017:9683" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="9033:9320" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="9064:9312" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="9330:9677" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="9361:9669" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="9689:9902" ph="///   &lt;para&gt;Set x, y and z components of an existing Vector3.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="9958:10033" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="10039:10199" ph="///   &lt;para&gt;Multiplies two vectors component-wise.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="10253:10324" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="10330:10496" ph="///   &lt;para&gt;Multiplies every component of this vector by the same component of scale.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="10533:10620" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="10626:10781" ph="///   &lt;para&gt;Cross Product of two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="10839:11108" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="11147:11250" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="11256:11414" ph="///   &lt;para&gt;Returns true if the given vector is exactly equal to this vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="11460:11568" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="11607:11708" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="11714:11905" ph="///   &lt;para&gt;Reflects a vector off the plane defined by a normal.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="11978:12070" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="12076:12209" ph="///   &lt;para&gt;Makes this vector have a magnitude of 1.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="12260:12418" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="12447:12616" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="12622:12732" ph="///   &lt;para&gt;Returns this vector with a magnitude of 1 (Read Only).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="12762:12840" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="12778:12834" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="12846:12999" ph="///   &lt;para&gt;Dot Product of two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="13053:13189" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="13195:13367" ph="///   &lt;para&gt;Projects a vector onto another vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="13435:13637" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="13643:13855" ph="///   &lt;para&gt;Projects a vector onto a plane defined by a normal orthogonal to the plane.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="13933:14005" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="14011:14404" ph="///   &lt;para&gt;Returns the angle in degrees between from and to.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="14460:14695" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="14701:15083" ph="///   &lt;para&gt;Returns the signed angle in degrees between from and to.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="15159:15266" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="15272:15431" ph="///   &lt;para&gt;Returns the distance between a and b.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="15486:15728" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="15734:15934" ph="///   &lt;para&gt;Returns a copy of vector with its magnitude clamped to maxLength.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="16008:16169" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="16220:16386" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="16392:16494" ph="///   &lt;para&gt;Returns the length of this vector (Read Only).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="16521:16703" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="16537:16697" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="16757:16911" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="16917:17027" ph="///   &lt;para&gt;Returns the squared length of this vector (Read Only).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="17057:17227" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="17073:17221" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="17233:17433" ph="///   &lt;para&gt;Returns a vector that is made from the smallest components of two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="17489:17602" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="17608:17807" ph="///   &lt;para&gt;Returns a vector that is made from the largest components of two vectors.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="17863:17976" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="17982:18077" ph="///   &lt;para&gt;Shorthand for writing Vector3(0, 0, 0).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="18108:18181" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18124:18175" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18187:18282" ph="///   &lt;para&gt;Shorthand for writing Vector3(1, 1, 1).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="18312:18384" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18328:18378" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18390:18485" ph="///   &lt;para&gt;Shorthand for writing Vector3(0, 0, 1).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="18519:18595" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18535:18589" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18601:18697" ph="///   &lt;para&gt;Shorthand for writing Vector3(0, 0, -1).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="18728:18801" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18744:18795" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18807:18902" ph="///   &lt;para&gt;Shorthand for writing Vector3(0, 1, 0).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="18931:19002" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="18947:18996" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19008:19104" ph="///   &lt;para&gt;Shorthand for writing Vector3(0, -1, 0).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="19135:19208" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19151:19202" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19214:19310" ph="///   &lt;para&gt;Shorthand for writing Vector3(-1, 0, 0).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="19341:19414" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19357:19408" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19420:19515" ph="///   &lt;para&gt;Shorthand for writing Vector3(1, 0, 0).&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="19547:19621" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19563:19615" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19627:19785" ph="///   &lt;para&gt;Shorthand for writing Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity) ... " />
+            <marker date="1555980071267" expanded="true" signature="19828:19913" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19844:19907" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="19919:20077" ph="///   &lt;para&gt;Shorthand for writing Vector3(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity) ... " />
+            <marker date="1555980071267" expanded="true" signature="20120:20205" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20136:20199" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20265:20336" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20396:20467" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20516:20572" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20630:20695" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20753:20818" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="20876:20941" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="21003:21093" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="21155:21195" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="21201:21345" ph="///   &lt;para&gt;Returns a nicely formatted string for this vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="21383:21507" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="21513:21657" ph="///   &lt;para&gt;Returns a nicely formatted string for this vector.&lt;/para&gt; ... " />
+            <marker date="1555980071267" expanded="true" signature="21699:21865" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="21943:22025" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="21959:22019" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="22214:22318" ph="{...}" />
+            <marker date="1555980071267" expanded="true" signature="22446:22518" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B140E050-1769-43F4-A096-6C7CFA9CC579/b5/f516e61c/Canvas.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="172" selection-end-column="6" />
+          <folding>
+            <marker date="1555980269534" expanded="true" signature="0:327" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1555980269534" expanded="false" signature="335:438" ph="..." />
+            <marker date="1555980269534" expanded="true" signature="461:8245" ph="{...}" />
+            <marker date="1555980269534" expanded="true" signature="466:564" ph="///   &lt;para&gt;Element that can be used for screen rendering.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="763:8243" ph="{...}" />
+            <marker date="1555980269534" expanded="true" signature="843:938" ph="///   &lt;para&gt;Is the Canvas in World or Overlay mode?&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="1088:1168" ph="///   &lt;para&gt;Is this the root Canvas?&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="1264:1355" ph="///   &lt;para&gt;Get the render rect for the Canvas.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="1381:1503" ph="{...}" />
+            <marker date="1555980269534" expanded="true" signature="1397:1497" ph="{...}" />
+            <marker date="1555980269534" expanded="true" signature="1509:1681" ph="///   &lt;para&gt;Used to scale the entire canvas, while still making it fit the screen. Only applies with renderMode i ... " />
+            <marker date="1555980269534" expanded="true" signature="1827:1944" ph="///   &lt;para&gt;The number of pixels per unit that is considered the default.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="2101:2249" ph="///   &lt;para&gt;Allows for nested canvases to override pixelPerfect settings inherited from parent canvases.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="2403:2560" ph="///   &lt;para&gt;Force elements in the canvas to be aligned with pixels. Only applies with renderMode is Screen Space. ... " />
+            <marker date="1555980269534" expanded="true" signature="2706:2815" ph="///   &lt;para&gt;How far away from the camera is the Canvas generated.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="2963:3098" ph="///   &lt;para&gt;The render order in which the canvas is being emitted to the Scene. (Read Only)&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="3192:3279" ph="///   &lt;para&gt;Override the sorting of canvas.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="3428:3521" ph="///   &lt;para&gt;Canvas' order within a sorting layer.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="3666:3789" ph="///   &lt;para&gt;For Overlay mode, display index on which the UI canvas will appear.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="3935:4030" ph="///   &lt;para&gt;Unique ID of the Canvas' sorting layer.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="4177:4283" ph="///   &lt;para&gt;Cached calculated value based upon SortingLayerID.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="4389:4536" ph="///   &lt;para&gt;Get or set the mask of additional shader channels to be used when creating the Canvas mesh.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="4720:4810" ph="///   &lt;para&gt;Name of the Canvas' sorting layer.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="4962:5186" ph="///   &lt;para&gt;Returns the Canvas closest to root, by checking through each parent and returning the last canvas fou ... " />
+            <marker date="1555980269534" expanded="true" signature="5282:5488" ph="///   &lt;para&gt;Camera used for sizing the Canvas when in Screen Space - Camera. Also used as the Camera that events  ... " />
+            <marker date="1555980269534" expanded="true" signature="5694:5827" ph="///   &lt;para&gt;The normalized grid size that the canvas will split the renderable area into.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="6067:6200" ph="///   &lt;para&gt;The normalized grid size that the canvas will split the renderable area into.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="6551:6695" ph="///   &lt;para&gt;Returns the default material that can be used for rendering text elements on the Canvas.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="6994:7140" ph="///   &lt;para&gt;Returns the default material that can be used for rendering normal elements on the Canvas.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="7304:7501" ph="///   &lt;para&gt;Gets or generates the ETC1 Material.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="7681:7780" ph="///   &lt;para&gt;Force all canvases to update their content.&lt;/para&gt; ... " />
+            <marker date="1555980269534" expanded="true" signature="7825:7876" ph="{...}" />
+            <marker date="1555980269534" expanded="true" signature="7953:8061" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AbstractCameraController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1555560711160" expanded="true" signature="6:78" ph="..." />
+            <marker date="1555560711160" expanded="true" signature="97:436" ph="{...}" />
+            <marker date="1555560711160" expanded="true" signature="250:433" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PositionLockCameraController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <marker date="1555973260683" expanded="false" signature="6:138" ph="..." />
+            <marker date="1555973260683" expanded="true" signature="157:2327" ph="{...}" />
+            <marker date="1555973260683" expanded="true" signature="232:2325" ph="{...}" />
+            <marker date="1555973260683" expanded="true" signature="355:532" ph="{...}" />
+            <marker date="1555973260683" expanded="true" signature="542:664" ph="/* Use the LateUpdate message to avoid setting the camera's position before ... */" />
+            <marker date="1555973260683" expanded="true" signature="690:1225" ph="{...}" />
+            <marker date="1555973260683" expanded="true" signature="989:1113" ph="{...}" />
+            <marker date="1555973260683" expanded="true" signature="1130:1215" ph="{...}" />
+            <marker date="1555973260683" expanded="true" signature="1273:2319" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PushBoxCamera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="25" selection-start-line="25" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <marker date="1555961862053" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555961862053" expanded="true" signature="97:2625" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="157:2623" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="382:559" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="569:691" ph="/* Use the LateUpdate message to avoid setting the camera's position before ... */" />
+            <marker date="1555961862053" expanded="true" signature="717:2040" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="930:1070" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="1140:1283" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="1353:1497" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="1563:1702" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="1804:1928" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="1945:2030" ph="{...}" />
+            <marker date="1555961862053" expanded="true" signature="2088:2617" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../exercise3-observer-cmnlee/Pikmini/Assets/Scripts/IWatcher.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PositionLockLerpCameraController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding>
+            <marker date="1556183081839" expanded="false" signature="6:92" ph="..." />
+            <marker date="1556183081839" expanded="true" signature="111:7717" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="190:7715" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="675:1176" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="1211:4422" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="1288:2801" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="1395:1527" ph="/* The conditional directly below allows us to only set ... */" />
+            <marker date="1556183081839" expanded="true" signature="1558:1706" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="1888:2014" ph="/* Camera is set to not-quite catch up to the moving player ... */" />
+            <marker date="1556183081839" expanded="true" signature="2071:2248" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="2269:2636" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="2818:4129" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="2882:3831" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="2921:3066" ph="/* Once again, we use this to set the StartPosition only once ... */" />
+            <marker date="1556183081839" expanded="true" signature="3100:3312" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="3393:3544" ph="/* Keep updating the camera according to Linear interpolation ... */" />
+            <marker date="1556183081839" expanded="true" signature="3852:4115" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="4186:4310" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="4327:4412" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="4470:5516" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="5526:5675" ph="/* Helper function that checks if camera position is the player's position. ... */" />
+            <marker date="1556183081839" expanded="true" signature="5724:5941" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="5951:6100" ph="/* Helper function code borrowed from PushBoxCamera.cs script. ... */" />
+            <marker date="1556183081839" expanded="true" signature="6151:7709" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="6324:6499" ph="/* Set how big to draw the pushbox boundaries based on some constant factor ... */" />
+            <marker date="1556183081839" expanded="true" signature="6585:6687" ph="/* Restrict the pushbox from becoming too big ... */" />
+            <marker date="1556183081839" expanded="true" signature="6728:6796" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="6867:7012" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="7084:7229" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="7301:7446" ph="{...}" />
+            <marker date="1556183081839" expanded="true" signature="7518:7663" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/FourWaySpeedupPushZoneCameraController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <marker date="1556155909409" expanded="false" signature="6:129" ph="..." />
+            <marker date="1556155909409" expanded="true" signature="148:4532" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="233:4530" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="557:807" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="834:2559" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="1075:1563" ph="/* Note: Because playerSpeed always returns 200 or 800 (when boosting), ... */" />
+            <marker date="1556155909409" expanded="true" signature="2320:2444" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="2461:2546" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="2615:3235" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="3245:3486" ph="/* Sets the camera speed to the player speed if player touches ... */" />
+            <marker date="1556155909409" expanded="true" signature="3556:4515" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="3697:3837" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="3907:4050" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="4120:4264" ph="{...}" />
+            <marker date="1556155909409" expanded="true" signature="4330:4469" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/FrameAutoScrollCameraControler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <marker date="1555971210815" expanded="true" signature="37:2725" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="114:2723" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="407:584" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="619:2044" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="982:1075" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="1145:1242" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="1309:1402" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="1473:1570" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="1808:1932" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="1949:2034" ph="{...}" />
+            <marker date="1555971210815" expanded="true" signature="2104:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <marker date="1555560711203" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555560711203" expanded="true" signature="167:2244" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="329:444" ph="/* Serialized private fields flag a warning as of v2018.3. ... */" />
+            <marker date="1555560711203" expanded="true" signature="703:1107" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="945:1101" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1143:1190" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1233:1284" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1303:2242" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1346:1469" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1506:1630" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1710:1841" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1854:2021" ph="{...}" />
+            <marker date="1555560711203" expanded="true" signature="1916:2011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TargetFocusLerpCameraController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <marker date="1556185515673" expanded="false" signature="6:92" ph="..." />
+            <marker date="1556185515673" expanded="true" signature="111:6182" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="189:6180" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="723:1167" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="1202:4805" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="1279:3209" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="1501:1633" ph="/* The conditional directly below allows us to only set ... */" />
+            <marker date="1556185515673" expanded="true" signature="1664:1812" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="1846:2014" ph="/* Update EndPosition to where the player Target is ... */" />
+            <marker date="1556185515673" expanded="true" signature="2498:2655" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="2676:2771" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="3226:4536" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="3388:4238" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="3440:3652" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="3799:3950" ph="/* Keep updating the camera according to Linear interpolation ... */" />
+            <marker date="1556185515673" expanded="true" signature="4259:4522" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="4569:4693" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="4710:4795" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="4853:5899" ph="{...}" />
+            <marker date="1556185515673" expanded="true" signature="5957:6174" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

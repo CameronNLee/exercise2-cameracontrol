@@ -56,8 +56,8 @@ namespace Obscura
                 // by adding the player's speed.
                 var movementDirection = PlayerObject.GetMovementDirection();
                 var currentSpeed = PlayerObject.GetCurrentSpeed();
-                var xComponent = (currentSpeed / 10.0f) * movementDirection.x;
-                var yComponent = (currentSpeed / 10.0f) * movementDirection.y;
+                var xComponent = (currentSpeed) * movementDirection.x;
+                var yComponent = (currentSpeed) * movementDirection.y;
                 
                 EndPosition = new Vector3(targetPosition.x + xComponent, targetPosition.y + yComponent, cameraPosition.z);
 

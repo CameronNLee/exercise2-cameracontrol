@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Owner\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Owner\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Obscura.293426136.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Owner\RiderProjects\exercise2-cameracontrol-cmnlee\Obscura" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Resources" t="Include">
+          <e p="terrain.shader" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AbstractCameraController.cs" t="Include" />
+          <e p="FourWaySpeedupPushZoneCameraController.cs" t="Include" />
+          <e p="FrameAutoScrollCameraControler.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="PositionLockCameraController.cs" t="Include" />
+          <e p="PositionLockLerpCameraController.cs" t="Include" />
+          <e p="PushBoxCamera.cs" t="Include" />
+          <e p="TargetFocusLerpCameraController.cs" t="Include" />
+          <e p="TerrainGenerator.cs" t="Include" />
+          <e p="TerrainGeneratorEdiitor.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Obscura.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
